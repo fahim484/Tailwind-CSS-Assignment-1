@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--  class="dark" id="htmlTag" -->
+  <!--  class="dark" id="htmlTag" -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,112 +21,187 @@
     <!-- Flowbite CDN Link -->
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.js"></script>
   </head>
-  <body class="bg-white dark:">
+  <body class="bg-white font-jakarta dark:">
     <!-- === This Is Header Section Start === -->
-    <header class="py-2 px-2 md:py-4">
-      <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
-        <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
-            <div>
-              <a href=""
-                ><img
-                  src="./assets/main-logo.png"
-                  alt="main-logo"
-                  class="w-28 md:w-fit"
-              /></a>
-            </div>
-            <div class="flex items-center md:order-2 space-x-3 md:space-x-6 rtl:space-x-reverse">
-              <a href="#"
-                ><button
-                  class="bg-[#F44335] text-xs md:text-lg py-1.5 md:py-3 px-2.5 md:px-6 rounded-lg text-[#FFFFFF] font-semibold hover:bg-[#DB3C2F] transition hover:scale-105 hover:translate-1"
-                >
-                  Register Interest
-                </button></a
+    <header class="py-2 px-2 md:py-10">
+      <nav
+        class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div>
+            <a href=""
+              ><img
+                src="./assets/main-logo.png"
+                alt="main-logo"
+                class="w-28 md:w-fit"
+            /></a>
+          </div>
+          <div
+            class="flex items-center md:order-2 space-x-3 md:space-x-6 rtl:space-x-reverse"
+          >
+            <a href="#"
+              ><button
+                class="global-btn"
               >
-              <button id="switch">
-                <!-- dark:stroke-white -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-7  hover:scale-110 transition duration-300"
-                  
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                  />
-                </svg>
-              </button>
-              <button
-                data-collapse-toggle="navbar-sticky"
-                type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-sticky"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Open main menu</span>
-                <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 17 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 1h15M1 7h15M1 13h15"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
+                Register Interest
+              </button></a
             >
-              <ul
-                class="flex flex-col md:flex-row items-center gap-1 md:gap-8 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+            <button id="switch">
+              <!-- dark:stroke-white -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-7 hover:scale-110 transition duration-300"
               >
-                <li>
-                  <a
-                    class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335]"
-                    href="#"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335]"
-                    href="#"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335]"
-                    href="#"
-                    >Upskill</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335]"
-                    href="#"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                />
+              </svg>
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col md:flex-row items-center gap-1 md:gap-8 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-1 px-40 md:py-0 md:px-0"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-1 px-40 md:py-0 md:px-0"
+                  href="#"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-1 px-40 md:py-0 md:px-0"
+                  href="#"
+                  >Upskill</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-1 px-40 md:py-0 md:px-0"
+                  href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <!-- === This Is Header Section End === -->
 
+    <!-- === This Is Hero or Banner Section Start === -->
+    <section
+      class="container grid grid-cols-12 mx-auto mb-8 gap-8 px-4 md:px-12 pt-20"
+    >
+      <!-- left side -->
+      <div class="col-span-12 md:col-span-6 md:ml-8 order-2 md:order-1">
+        <h5 class="text-[#20484F] text-sm md:text-lg font-bold text-center md:text-left">
+          Discover <span class="text-[#F44335]">-</span> Interact
+          <span class="text-[#F44335]">-</span> Engage
+        </h5>
+        <h1 class="font-bold text-[20px] md:text-[64px] text-[#072125] text-center md:text-start pt-5 md:pt-0">
+          Google <br class="hidden md:block" />
+          <span
+            class="text-[#F44335] underline underline-offset-4 md:underline-offset-[13px] md:decoration-4"
+            >IT Support</span
+          >
+          <br class="hidden md:block" />
+          Certificate
+        </h1>
+        <p class="text-[#072125] py-5 md:py-14 text-lg text-justify md:text-left">
+          This is your path to a career in IT. In this program, you’ll learn in-
+          <br class="hidden md:block" />
+          demand skills with no degree or experience required.
+        </p>
+        <div class="flex items-center gap-3 text-wrap md:gap-8 text-[#2D3142] pb-7 md:pb-16">
+          <div class="flex flex-col text-center">
+            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">438</span>
+            <span class="md:text-lg">Videos</span>
+          </div>
+          <div class="flex flex-col text-center">
+            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">151</span>
+            <span class="md:text-lg">Readings</span>
+          </div>
+          <div class="flex flex-col text-center">
+            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">108</span>
+            <span class="md:text-lg">Quizzes</span>
+          </div>
+          <div class="flex flex-col text-center">
+            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">24</span>
+            <span class="md:text-lg">Exercises</span>
+          </div>
+          <div class="flex flex-col text-center">
+            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">4</span>
+            <span class="md:text-lg">Assignments</span>
+          </div>
+        </div>
+        <div class="flex gap-5 justify-center md:justify-normal">
+            <a href="#"
+              ><button
+                class="global-btn"
+              >
+              Sign up
+              </button></a
+            >
+            <a href="#"
+              ><button
+                class="bg-[#FFFFFF] text-xs md:text-lg py-1.5 md:py-3 px-2.5 md:px-6 rounded-lg text-[#072125] border border-[#20484F1A] font-semibold focus:outline-none  hover:bg-gray-100 hover:text-[#DB3C2F] focus:z-10 focus:ring-4 focus:ring-gray-100 "
+              >
+              Learn more
+              </button></a
+            >
+            <!-- dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 -->
+        </div>
+      </div>
+      <!-- Right side -->
+      <div class="col-span-12 md:col-span-6 md:ml-32 order-1 md:order-2">
+        <img src="./assets/banner-img.png" alt="">
+      </div>
+    </section>
+    <!-- === This Is Hero or Banner Section End === -->
 
     <!-- === JavaScript Start === -->
     <!-- <script>

@@ -21,12 +21,10 @@
     <!-- Flowbite CDN Link -->
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.js"></script>
   </head>
-  <body class="bg-white font-jakarta dark:">
+  <body class="bg-[#FAFAFA] font-jakarta dark:">
     <!-- === This Is Header Section Start === -->
-    <header class="py-2 px-2 md:py-10">
-      <nav
-        class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200"
-      >
+    <header id="home" class="py-2 px-2 md:py-10">
+      <nav class="fixed w-full z-20 top-0 start-0 border-b border-gray-200 bg-[#FFFFFF]">
         <div
           class="container flex flex-wrap items-center justify-between mx-auto p-4"
         >
@@ -42,11 +40,7 @@
             class="flex items-center md:order-2 space-x-3 md:space-x-6 rtl:space-x-reverse"
           >
             <a href="#"
-              ><button
-                class="global-btn"
-              >
-                Register Interest
-              </button></a
+              ><button class="global-btn">Register Interest</button></a
             >
             <button id="switch">
               <!-- dark:stroke-white -->
@@ -95,35 +89,19 @@
             id="navbar-sticky"
           >
             <ul
-              class="flex flex-col md:flex-row items-center gap-1 md:gap-8 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+              class="flex flex-col md:flex-row items-center gap-1 md:gap-8 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-[#F9FAFB] md:bg-white"
             >
               <li>
-                <a
-                  class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-1 px-40 md:py-0 md:px-0"
-                  href="#"
-                  >Home</a
-                >
+                <a class="navbar-list" href="#home">Home</a>
               </li>
               <li>
-                <a
-                  class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-1 px-40 md:py-0 md:px-0"
-                  href="#"
-                  >About Us</a
-                >
+                <a class="navbar-list" href="#">About Us</a>
               </li>
               <li>
-                <a
-                  class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-1 px-40 md:py-0 md:px-0"
-                  href="#"
-                  >Upskill</a
-                >
+                <a class="navbar-list" href="#">Upskill</a>
               </li>
               <li>
-                <a
-                  class="text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-1 px-40 md:py-0 md:px-0"
-                  href="#"
-                  >Contact Us</a
-                >
+                <a class="navbar-list" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -138,11 +116,15 @@
     >
       <!-- left side -->
       <div class="col-span-12 md:col-span-6 md:ml-8 order-2 md:order-1">
-        <h5 class="text-[#20484F] text-sm md:text-lg font-bold text-center md:text-left">
+        <h5
+          class="text-[#20484F] text-sm md:text-lg font-bold text-center md:text-left"
+        >
           Discover <span class="text-[#F44335]">-</span> Interact
           <span class="text-[#F44335]">-</span> Engage
         </h5>
-        <h1 class="font-bold text-[20px] md:text-[64px] text-[#072125] text-center md:text-start pt-5 md:pt-0">
+        <h1
+          class="font-bold text-[20px] md:text-[64px] text-[#072125] text-center md:text-start pt-5 md:pt-0"
+        >
           Google <br class="hidden md:block" />
           <span
             class="text-[#F44335] underline underline-offset-4 md:underline-offset-[13px] md:decoration-4"
@@ -151,57 +133,78 @@
           <br class="hidden md:block" />
           Certificate
         </h1>
-        <p class="text-[#072125] py-5 md:py-14 text-lg text-justify md:text-left">
+        <p
+          class="text-[#072125] py-5 md:py-14 text-lg text-justify md:text-left"
+        >
           This is your path to a career in IT. In this program, you’ll learn in-
           <br class="hidden md:block" />
           demand skills with no degree or experience required.
         </p>
-        <div class="flex items-center gap-3 text-wrap md:gap-8 text-[#2D3142] pb-7 md:pb-16">
+        <div
+          class="flex items-center gap-3 text-wrap md:gap-8 text-[#2D3142] pb-7 md:pb-16"
+        >
           <div class="flex flex-col text-center">
-            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">438</span>
+            <span class="banner-span">438</span>
             <span class="md:text-lg">Videos</span>
           </div>
           <div class="flex flex-col text-center">
-            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">151</span>
+            <span class="banner-span">151</span>
             <span class="md:text-lg">Readings</span>
           </div>
           <div class="flex flex-col text-center">
-            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">108</span>
+            <span class="banner-span">108</span>
             <span class="md:text-lg">Quizzes</span>
           </div>
           <div class="flex flex-col text-center">
-            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">24</span>
+            <span class="banner-span">24</span>
             <span class="md:text-lg">Exercises</span>
           </div>
           <div class="flex flex-col text-center">
-            <span class="text-[#00FF84] font-bold md:text-2xl font-inter">4</span>
+            <span class="banner-span">4</span>
             <span class="md:text-lg">Assignments</span>
           </div>
         </div>
-        <div class="flex gap-5 justify-center md:justify-normal">
-            <a href="#"
-              ><button
-                class="global-btn"
-              >
-              Sign up
-              </button></a
+        <div class="flex gap-5 justify-center md:justify-normal pb-2 md:pb-4">
+          <a href="#"><button class="global-btn">Sign up</button></a>
+          <a href="#"
+            ><button
+              class="bg-[#FFFFFF] text-xs md:text-lg py-1.5 md:py-3 px-2.5 md:px-6 rounded-lg text-[#072125] border border-[#20484F1A] font-semibold focus:outline-none hover:bg-gray-100 hover:text-[#DB3C2F] focus:z-10 focus:ring-4 focus:ring-gray-100"
             >
-            <a href="#"
-              ><button
-                class="bg-[#FFFFFF] text-xs md:text-lg py-1.5 md:py-3 px-2.5 md:px-6 rounded-lg text-[#072125] border border-[#20484F1A] font-semibold focus:outline-none  hover:bg-gray-100 hover:text-[#DB3C2F] focus:z-10 focus:ring-4 focus:ring-gray-100 "
-              >
               Learn more
-              </button></a
-            >
-            <!-- dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 -->
+            </button></a
+          >
+          <!-- dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 -->
         </div>
       </div>
       <!-- Right side -->
       <div class="col-span-12 md:col-span-6 md:ml-32 order-1 md:order-2">
-        <img src="./assets/banner-img.png" alt="">
+        <img src="./assets/banner-img.png" alt="" />
       </div>
     </section>
     <!-- === This Is Hero or Banner Section End === -->
+
+    <!-- === This Is Brand Section Start === -->
+    <section class="bg-[#FFFFFF]">
+      <div class="container mx-auto flex items-center justify-between py-2 md:py-5 px-2 md:px-20">
+        <div>
+          <p class="text-[#000000] text-lg">
+            Pave your path to career success by <br />
+            gaining a professional Google <br />
+            certificate with the support of C4U
+          </p>
+        </div>
+        <div class="border-l border-[#D1D3D4] md:pl-28">
+          <img src="./assets/Company-logo-1.png" alt="" class="cursor-pointer" />
+        </div>
+        <div class="border-x border-[#D1D3D4] md:px-20">
+          <img src="./assets/Company-logo-2.png" alt="" class="cursor-pointer" />
+        </div>
+        <div class="">
+          <img src="./assets/Company-logo-3.png" alt="" class="cursor-pointer" />
+        </div>
+      </di>
+    </section>
+    <!-- === This Is Brand Section End === -->
 
     <!-- === JavaScript Start === -->
     <!-- <script>

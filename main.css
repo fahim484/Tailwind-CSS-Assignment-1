@@ -11,18 +11,18 @@
     @apply bg-[#F44335] text-xs md:text-lg py-1.5 md:py-3 px-2.5 md:px-6 rounded-lg text-[#FFFFFF] font-semibold hover:bg-[#DB3C2F] transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110  duration-300;
   }
   .navbar-list {
-      @apply text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-2 px-3 md:p-0 w-96 text-center md:w-full;
-    }
-    .banner-span {
-      @apply text-[#00FF84] font-bold md:text-2xl font-inter;
-    }
-    .skills-container {
-      @apply col-span-12 md:col-span-6 border rounded-3xl md:p-8 drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF];
-    }
-    .skills-keyword {
-      @apply text-[#181818] text-lg py-2 px-3 border border-[#F44335] rounded-full cursor-pointer hover:bg-[#F44335] hover:text-white focus:ring-2 focus:outline-none focus:ring-red-300  text-center;
-    }
-    /* .news-para {
+    @apply text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-2 px-3 md:p-0 w-96 text-center md:w-full;
+  }
+  .banner-span {
+    @apply text-[#00FF84] font-bold md:text-2xl font-inter;
+  }
+  .skills-container {
+    @apply col-span-12 md:col-span-6 border rounded-3xl p-4 md:p-8 drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF];
+  }
+  .skills-keyword {
+    @apply text-[#181818] text-xs md:text-lg py-0.5 px-1 md:py-2 md:px-3 border border-[#F44335] rounded-full cursor-pointer hover:bg-[#F44335] hover:text-white focus:ring-2 focus:outline-none focus:ring-red-300  text-center;
+  }
+  /* .news-para {
       @apply text-sm md:text-base text-[#616161] dark:text-gray-300;
     }
     .tag {

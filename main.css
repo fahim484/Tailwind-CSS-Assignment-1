@@ -10,6 +10,9 @@
   .global-btn {
     @apply bg-[#F44335] text-xs md:text-lg py-1.5 md:py-3 px-2.5 md:px-6 rounded-lg text-[#FFFFFF] font-semibold hover:bg-[#DB3C2F] transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110  duration-300;
   }
+  .global-btn-2 {
+    @apply bg-[#FFFFFF] text-xs md:text-lg py-1.5 md:py-3 px-2.5 md:px-6 rounded-lg text-[#072125] border border-[#20484F1A] font-semibold focus:outline-none hover:bg-gray-100 hover:text-[#DB3C2F] focus:z-10 focus:ring-4 focus:ring-gray-100;
+  }
   .navbar-list {
     @apply text-[#072125] focus:text-[#F44335] hover:text-[#F44335] hover:bg-gray-100 md:hover:bg-transparent block py-2 px-3 md:p-0 w-96 text-center md:w-full;
   }

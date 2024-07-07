@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark" id="htmlTag">
+<html lang="en" class="dark scroll-smooth" id="htmlTag">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,14 +20,14 @@
     <!-- Flowbite CDN Link -->
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.js"></script>
   </head>
-  <body class="bg-[#FAFAFA] font-jakarta dark:bg-gray-900">
+  <body class="bg-[#FAFAFA] font-jakarta dark:bg-[#000000]">
     <!-- === This Is Header Section Start === -->
     <header id="home" class="py-2 px-2 md:py-10">
       <nav
-        class="fixed w-full z-20 top-0 start-0 border-b border-gray-200 bg-[#FFFFFF] dark:bg-gray-400"
+        class="fixed w-full z-20 top-0 start-0 border-b border-gray-200 bg-[#FFFFFF] dark:bg-slate-400"
       >
         <div
-          class="container flex flex-wrap items-center justify-between mx-auto p-4"
+          class="container flex flex-wrap items-center justify-between mx-auto p-[12px]"
         >
           <div>
             <a href=""
@@ -43,8 +43,8 @@
             <a href="#"
               ><button class="global-btn">Register Interest</button></a
             >
-            <button id="switch">
-              <!-- dark:stroke-white -->
+            <!-- btn start -->
+            <button id="switch2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -60,10 +60,29 @@
                 />
               </svg>
             </button>
+            <!-- btn end -->
+            <!-- btn start -->
+            <button id="switch1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-7 hover:scale-110 transition duration-300 dark:stroke-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            </button>
+            <!-- btn end -->
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-slate-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
@@ -90,19 +109,19 @@
             id="navbar-sticky"
           >
             <ul
-              class="flex flex-col md:flex-row items-center gap-1 md:gap-8 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-[#F9FAFB] md:bg-white dark:bg-gray-400"
+              class="flex flex-col md:flex-row items-center gap-1 md:gap-8 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-[#F9FAFB] md:bg-white dark:bg-slate-400"
             >
               <li>
                 <a class="navbar-list" href="#home">Home</a>
               </li>
               <li>
-                <a class="navbar-list" href="#">About Us</a>
+                <a class="navbar-list" href="#about">About Us</a>
               </li>
               <li>
-                <a class="navbar-list" href="#">Upskill</a>
+                <a class="navbar-list" href="#upskill">Upskill</a>
               </li>
               <li>
-                <a class="navbar-list" href="#">Contact Us</a>
+                <a class="navbar-list" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -113,10 +132,10 @@
 
     <!-- === This Is Hero or Banner Section Start === -->
     <section
-      class="container grid grid-cols-12 mx-auto mb-8 gap-8 px-4 md:px-12 pt-20"
+      class="container grid grid-cols-12 mx-auto mb-20 gap-8 px-4 md:px-12 pt-20"
     >
       <!-- left side -->
-      <div class="col-span-12 md:col-span-6 md:ml-8 order-2 md:order-1">
+      <div class="col-span-12 md:col-span-6 md:ml-8">
         <h5
           class="text-[#20484F] text-sm md:text-lg font-bold text-center md:text-left dark:text-white"
         >
@@ -172,14 +191,14 @@
         </div>
       </div>
       <!-- Right side -->
-      <div class="col-span-12 md:col-span-6 md:ml-32 order-1 md:order-2">
+      <div class="col-span-12 md:col-span-6 md:ml-32">
         <img src="./assets/banner-img.png" alt="" />
       </div>
     </section>
     <!-- === This Is Hero or Banner Section End === -->
 
     <!-- === This Is Brand Section Start === -->
-    <section class="bg-[#FFFFFF] dark:bg-slate-500">
+    <section class="bg-[#FFFFFF] dark:bg-slate-400">
       <div
         class="container mx-auto flex flex-col md:flex-row items-center pt-2 pb-10 md:py-5 px-2 md:px-20"
       >
@@ -193,14 +212,18 @@
           </p>
         </div>
         <div class="flex items-center justify-between">
-          <div class="md:border-l border-[#D1D3D4] pl-2 pr-2 md:px-28 dark:border-white">
+          <div
+            class="md:border-l border-[#D1D3D4] pl-2 pr-2 md:px-28 dark:border-white"
+          >
             <img
               src="./assets/Company-logo-1.png"
               alt=""
               class="cursor-pointer w-[80px] md:w-full"
             />
           </div>
-          <div class="border-x border-[#D1D3D4] px-2 md:px-20 dark:border-white">
+          <div
+            class="border-x border-[#D1D3D4] px-2 md:px-20 dark:border-white"
+          >
             <img
               src="./assets/Company-logo-2.png"
               alt=""
@@ -221,10 +244,11 @@
 
     <!-- === This Is Skills Section Start === -->
     <section
-      class="container grid grid-cols-12 mx-auto md:mb-8 gap-5 md:gap-16 px-4 md:px-12 pt-10 md:pt-24 pb-8"
+      id="about"
+      class="container grid grid-cols-12 mx-auto md:mb-8 gap-5 md:gap-16 px-4 md:px-12 pt-10 md:pt-24 pb-8 scroll-mt-12"
     >
       <!-- left side -->
-      <div class="skills-container order-2 md:order-1 dark:bg-slate-700">
+      <div class="skills-container dark:bg-slate-700">
         <h3
           class="text-[#000000] font-semibold md:text-2xl text-center md:text-left pt-5 md:pt-0 dark:text-white"
         >
@@ -285,7 +309,7 @@
         </div>
       </div>
       <!-- Right side -->
-      <div class="skills-container order-1 md:order-2 dark:bg-slate-700">
+      <div class="skills-container dark:bg-slate-700">
         <img src="./assets/skills-img.png" alt="" />
         <h3
           class="text-[#000000] font-semibold text-base md:text-2xl text-center md:text-left pt-5 md:pt-2 dark:text-white"
@@ -293,35 +317,21 @@
           Skills you will gain
         </h3>
         <hr class="h-px my-8 bg-[#F9CCC7] border-0" />
-        <div class="text-[#181818] text-lg font-medium text-justify">
-          <div class="flex items-center gap-2 md:gap-4">
-            <button class="skills-keyword">Debugging</button>
-            <button class="skills-keyword">Customer Service</button>
-            <button class="skills-keyword">Customer Support</button>
-          </div>
-          <div
-            class="flex items-center gap-2 md:gap-4 mt-3 md:mt-6 mb-4 md:mb-8"
+        <div class="flex flex-wrap gap-x-3 gap-y-3 pb-1 pt-5 md:pt-6">
+          <span class="skills-keyword">Debugging</span>
+          <span class="skills-keyword">Customer Service</span>
+          <span class="skills-keyword">Customer Support</span>
+          <span class="skills-keyword">Domain Name System (DNS)</span>
+          <span class="skills-keyword">Network Model</span>
+          <span class="skills-keyword">Linux</span>
+          <span class="skills-keyword"
+            >Encryption Algorithms and Techniques</span
           >
-            <button class="skills-keyword">Domain Name System (DNS)</button>
-            <button class="skills-keyword">Network Model</button>
-            <button class="skills-keyword">Linux</button>
-          </div>
-          <div
-            class="flex items-center gap-2 md:gap-4 mt-3 md:mt-6 mb-4 md:mb-8"
-          >
-            <button class="skills-keyword">
-              Encryption Algorithms and Techniques
-            </button>
-            <button class="skills-keyword">Network Protocols</button>
-          </div>
-          <div
-            class="flex items-center gap-2 md:gap-4 mt-3 md:mt-6 mb-4 md:mb-8"
-          >
-            <button class="skills-keyword">Ipv4</button>
-            <button class="skills-keyword">Troubleshooting</button>
-            <button class="skills-keyword">Binary Code</button>
-            <button class="skills-keyword">Cloud Computing</button>
-          </div>
+          <span class="skills-keyword">Network Protocols</span>
+          <span class="skills-keyword">Ipv4</span>
+          <span class="skills-keyword">Troubleshooting</span>
+          <span class="skills-keyword">Binary Code</span>
+          <span class="skills-keyword">Cloud Computing</span>
         </div>
       </div>
     </section>
@@ -332,7 +342,7 @@
       class="container grid grid-cols-12 mx-auto md:mb-8 gap-5 md:gap-16 px-4 md:px-12 pt-10 md:pt-24 pb-8"
     >
       <!-- left side -->
-      <div class="skills-container order-2 md:order-1 dark:bg-slate-700">
+      <div class="skills-container dark:bg-slate-700">
         <h3
           class="text-[#000000] font-semibold md:text-2xl text-center md:text-left pt-5 md:pt-0 md:mb-6 dark:text-white"
         >
@@ -342,7 +352,7 @@
         <div class="flex items-center gap-2 md:gap-14">
           <!-- Left side -->
           <div
-            class="text-[#181818] text-xs md:text-lg md:font-medium md:text-justify "
+            class="text-[#181818] text-xs md:text-lg md:font-medium md:text-justify"
           >
             <div
               class="flex items-center gap-4 pt-5 md:pt-3 pb-4 cursor-pointer"
@@ -350,7 +360,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">Database administrator</p>
             </div>
@@ -360,7 +370,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">Tech support specialist</p>
             </div>
@@ -370,7 +380,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">IT specialist</p>
             </div>
@@ -380,7 +390,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">Systems analyst</p>
             </div>
@@ -388,7 +398,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">Network engineer</p>
             </div>
@@ -403,7 +413,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">Help desk technician</p>
             </div>
@@ -413,7 +423,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">IT support specialist</p>
             </div>
@@ -423,7 +433,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">IT technician</p>
             </div>
@@ -433,7 +443,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">Computer user specialist</p>
             </div>
@@ -441,7 +451,7 @@
               <img
                 src="./assets/arrow-logo.png"
                 alt=""
-                class="hover:animate-bounce size-[30px] md:size-auto"
+                class="hover:animate-bounce size-[30px] md:size-auto dark-logo"
               />
               <p class="dark:text-white">IT assistant</p>
             </div>
@@ -449,7 +459,7 @@
         </div>
       </div>
       <!-- Right side -->
-      <div class="col-span-12 md:col-span-6 order-1 md:order-2">
+      <div class="col-span-12 md:col-span-6">
         <img
           src="./assets/support-img.png"
           alt=""
@@ -460,7 +470,7 @@
     <!-- === This Is Support Section End === -->
 
     <!-- === This Is Courses Section Start === -->
-    <section class="bg-[#FFFFFF] dark:bg-slate-900">
+    <section id="upskill" class="bg-[#FFFFFF] dark:bg-slate-900 scroll-mt-20">
       <div class="container mx-auto px-4 md:px-12 pt-7 md:pt-16 pb-8 relative">
         <h2
           class="text-[#2D3142] text-base md:text-5xl font-bold pb-5 md:pb-20 text-center md:text-left dark:text-white"
@@ -469,7 +479,7 @@
           Professional Certificate
         </h2>
         <div
-          class="flex gap-1 md:gap-12 items-center justify-center md:justify-normal"
+          class="flex gap-2 md:gap-12 items-center justify-center md:justify-normal"
         >
           <button class="courses-keyword">Course 1</button>
           <button class="courses-keyword">Course 2</button>
@@ -576,7 +586,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Understand how the binary system works</p>
+              <p class="dark:text-white">
+                Understand how the binary system works
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -622,7 +634,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Choose and install an operating system on a computer</p>
+              <p class="dark:text-white">
+                Choose and install an operating system on a computer
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 cursor-pointer"
@@ -645,7 +659,7 @@
             >
               Skills you will gain
             </h3>
-            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0">
+            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0 md:w-[800px]">
               <button class="skills-keyword">Binary Code</button>
               <button class="skills-keyword">Troubleshooting</button>
               <button class="skills-keyword">Customer Support</button>
@@ -661,7 +675,9 @@
           <div
             class="text-[#181818] text-xs md:text-lg md:font-medium md:pb-12 p-5 md:p-0"
           >
-            <ul class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white">
+            <ul
+              class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white"
+            >
               <li class="cursor-pointer">Flexible deadlines</li>
               <li class="cursor-pointer">Shareable Certificate</li>
               <li class="cursor-pointer">100% online</li>
@@ -673,9 +689,19 @@
       </section>
       <!-- Courses One Section End -->
 
+      <!-- Connector Image start -->
+      <div class="relative">
+        <img
+          src="./assets/Connector-vector-0.png"
+          alt="vector-1"
+          class="absolute right-1/4 -top-20 md:right-1/4 md:-top-44 w-[200px] md:w-fit z-50"
+        />
+      </div>
+      <!-- Connector Image end -->
+
       <!-- Courses Two Section Start -->
       <section
-        class="container mx-auto grid grid-cols-12 md:mb-8 gap-0 md:gap-3 my-20 md:my-52 border rounded-3xl drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF] dark:bg-slate-700"
+        class="container mx-auto grid grid-cols-12 gap-0 md:gap-3 mt-20 md:mt-72 border rounded-3xl drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF] dark:bg-slate-700"
       >
         <!-- Left side -->
         <section
@@ -757,7 +783,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Describe computer networks in terms of a five-layer mode</p>
+              <p class="dark:text-white">
+                Describe computer networks in terms of a five-layer mode
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -780,7 +808,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Grasp powerful network troubleshooting tools and techniques</p>
+              <p class="dark:text-white">
+                Grasp powerful network troubleshooting tools and techniques
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -816,7 +846,7 @@
             >
               Skills you will gain
             </h3>
-            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0">
+            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0 md:w-[800px]">
               <button class="skills-keyword">Domain Name System (DNS)</button>
               <button class="skills-keyword">Ipv4</button>
               <button class="skills-keyword">Network Model</button>
@@ -832,7 +862,9 @@
           <div
             class="text-[#181818] text-xs md:text-lg md:font-medium md:pb-12 p-5 md:p-0"
           >
-            <ul class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white">
+            <ul
+              class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white"
+            >
               <li class="cursor-pointer">Flexible deadlines</li>
               <li class="cursor-pointer">Shareable Certificate</li>
               <li class="cursor-pointer">100% online</li>
@@ -844,9 +876,19 @@
       </section>
       <!-- Courses Two Section End -->
 
+      <!-- Connector Image start -->
+      <div class="relative h-[80px] md:h-[420px] w-full">
+        <img
+          src="./assets/Connector-vector-1.png"
+          alt="vector-1"
+          class="absolute right-1/4 w-[200px] md:w-fit"
+        />
+      </div>
+      <!-- Connector Image end -->
+
       <!-- Courses Three Section Start -->
       <section
-        class="container mx-auto grid grid-cols-12 md:mb-8 gap-0 md:gap-3 my-20 md:my-52 border rounded-3xl drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF] dark:bg-slate-700"
+        class="container mx-auto grid grid-cols-12 gap-0 md:gap-3 border rounded-3xl drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF] dark:bg-slate-700"
       >
         <!-- Left side -->
         <section
@@ -942,7 +984,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Set up users, groups, and permissions for account access</p>
+              <p class="dark:text-white">
+                Set up users, groups, and permissions for account access
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -965,7 +1009,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Configure disk partitions and filesystems</p>
+              <p class="dark:text-white">
+                Configure disk partitions and filesystems
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -975,7 +1021,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Understand how system processes work and how to manage them</p>
+              <p class="dark:text-white">
+                Understand how system processes work and how to manage them
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -985,7 +1033,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Work with system logs and remote connection tools</p>
+              <p class="dark:text-white">
+                Work with system logs and remote connection tools
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -1005,7 +1055,7 @@
             >
               Skills you will gain
             </h3>
-            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0">
+            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0 md:w-[800px]">
               <button class="skills-keyword">Powershell</button>
               <button class="skills-keyword">Linux File Systems</button>
               <button class="skills-keyword">Command-Line Interface</button>
@@ -1021,7 +1071,9 @@
           <div
             class="text-[#181818] text-xs md:text-lg md:font-medium md:pb-12 p-5 md:p-0"
           >
-            <ul class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white">
+            <ul
+              class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white"
+            >
               <li class="cursor-pointer">Flexible deadlines</li>
               <li class="cursor-pointer">Shareable Certificate</li>
               <li class="cursor-pointer">100% online</li>
@@ -1033,9 +1085,19 @@
       </section>
       <!-- Courses Three Section End -->
 
+      <!-- Connector Image start -->
+      <div class="relative h-[80px] md:h-[420px] w-full">
+        <img
+          src="./assets/Connector-vector-2.png"
+          alt="vector-1"
+          class="absolute right-1/4 w-[200px] md:w-fit"
+        />
+      </div>
+      <!-- Connector Image end -->
+
       <!-- Courses Four Section Start -->
       <section
-        class="container mx-auto grid grid-cols-12 md:mb-8 gap-0 md:gap-3 my-20 md:my-52 border rounded-3xl drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF] dark:bg-slate-700"
+        class="container mx-auto grid grid-cols-12 gap-0 md:gap-3 border rounded-3xl drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF] dark:bg-slate-700"
       >
         <!-- Left side -->
         <section
@@ -1179,7 +1241,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Choose and install an operating system on a computer</p>
+              <p class="dark:text-white">
+                Choose and install an operating system on a computer
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -1215,7 +1279,7 @@
             >
               Skills you will gain
             </h3>
-            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0">
+            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0 md:w-[800px]">
               <button class="skills-keyword">Directory Service</button>
               <button class="skills-keyword">
                 Lightweight Directory Access Protocol (LDAP)
@@ -1232,7 +1296,9 @@
           <div
             class="text-[#181818] text-xs md:text-lg md:font-medium md:pb-12 p-5 md:p-0"
           >
-            <ul class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white">
+            <ul
+              class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white"
+            >
               <li class="cursor-pointer">Flexible deadlines</li>
               <li class="cursor-pointer">Shareable Certificate</li>
               <li class="cursor-pointer">100% online</li>
@@ -1244,9 +1310,19 @@
       </section>
       <!-- Courses Four Section End -->
 
+      <!-- Connector Image start -->
+      <div class="relative h-[80px] md:h-[420px] w-full">
+        <img
+          src="./assets/Connector-vector-3.png"
+          alt="vector-1"
+          class="absolute right-1/4 w-[200px] md:w-fit"
+        />
+      </div>
+      <!-- Connector Image end -->
+
       <!-- Courses Five Section Start -->
       <section
-        class="container mx-auto grid grid-cols-12 md:mb-8 gap-0 md:gap-3 mt-20 md:my-52 border rounded-3xl drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF] dark:bg-slate-700"
+        class="container mx-auto grid grid-cols-12 gap-0 md:gap-3 mb-0 md:mb-52 border rounded-3xl drop-shadow-lg shadow-[#00000040] bg-[#FFFFFF] dark:bg-slate-700"
       >
         <!-- Left side -->
         <section
@@ -1348,7 +1424,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Various authentication systems and types</p>
+              <p class="dark:text-white">
+                Various authentication systems and types
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -1358,7 +1436,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">The difference between authentication and authorization</p>
+              <p class="dark:text-white">
+                The difference between authentication and authorization
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -1381,7 +1461,9 @@
                 alt=""
                 class="hover:animate-bounce size-[30px] md:size-auto"
               />
-              <p class="dark:text-white">Best practices for securing a network</p>
+              <p class="dark:text-white">
+                Best practices for securing a network
+              </p>
             </div>
             <div
               class="flex items-center gap-2 md:gap-4 pt-1 md:pt-3 pb-3 cursor-pointer"
@@ -1404,7 +1486,7 @@
             >
               Skills you will gain
             </h3>
-            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0">
+            <div class="flex items-center gap-2 md:gap-4 p-1 md:p-0 md:w-[800px]">
               <button class="skills-keyword">Cybersecurity</button>
               <button class="skills-keyword">Wireless Security</button>
               <button class="skills-keyword">Cryptography</button>
@@ -1420,7 +1502,9 @@
           <div
             class="text-[#181818] text-xs md:text-lg md:font-medium md:pb-12 p-5 md:p-0"
           >
-            <ul class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white">
+            <ul
+              class="list-disc list-inside marker:text-[#F9CCC7] dark:text-white"
+            >
               <li class="cursor-pointer">Flexible deadlines</li>
               <li class="cursor-pointer">Shareable Certificate</li>
               <li class="cursor-pointer">100% online</li>
@@ -1436,11 +1520,12 @@
 
     <!-- === This Is Graduate Section End === -->
     <section
+      id="contact"
       style="background-image: url('./assets/graduate-img.png')"
-      class="bg-cover bg-center bg-no-repeat h-[750px] relative mt-52"
+      class="bg-cover bg-center bg-no-repeat h-[750px] relative mt-20 md:mt-52 scroll-mt-20"
     >
       <div
-        class="bg-[#FFFFFF] absolute left-9 top-64 md:left-52 md:top-20 h-[260px] w-[350px] md:h-[570px] md:w-[760px] p-5 md:p-14 rounded-xl dark:bg-slate-500"
+        class="bg-[#FFFFFF] absolute left-9 top-64 md:left-52 md:top-20 h-[260px] w-[350px] md:h-[570px] md:w-[760px] p-5 md:p-14 rounded-xl dark:bg-[#3d0000ee]"
       >
         <img
           src="./assets/graduate-logo.png"
@@ -1467,18 +1552,18 @@
     <!-- === This Is Graduate Section End === -->
 
     <!-- === This Is Footer Section End === -->
-    <footer class="bg-[#FFFFFF]  dark:bg-gray-800">
+    <footer class="bg-[#FFFFFF] dark:bg-slate-400">
       <section
         class="container mx-auto grid grid-cols-12 md:mb-8 gap-0 md:gap-3 pt-10"
       >
         <!-- left side -->
-        <section class="col-span-12 md:col-span-4 p-8 md:p-10 ">
+        <section class="col-span-12 md:col-span-4 p-8 md:p-10">
           <a href=""
-              ><img
-                src="./assets/main-logo.png"
-                alt="main-logo"
-                class="w-28 md:w-fit pb-5"
-            /></a>
+            ><img
+              src="./assets/main-logo.png"
+              alt="main-logo"
+              class="w-28 md:w-fit pb-5"
+          /></a>
           <address class="text-[#20484F] font-light leading-7 dark:text-white">
             Leve139 <br class="hidden md:block" />
             One Canada Square, <br class="hidden md:block" />
@@ -1488,109 +1573,120 @@
           </address>
         </section>
         <!-- Right side -->
-        <section class="col-span-12 md:col-span-8 p-8 md:p-10 text-[#20484F] dark:text-white">
+        <section
+          class="col-span-12 md:col-span-8 p-8 md:p-10 text-[#20484F] dark:text-white"
+        >
           <div class="flex flex-col md:flex-row gap-32">
             <div>
-              <ul
-              class="flex flex-col gap-6"
-            >
-              <li>
-                <a class="text-lg font-bold" href="#home">Home</a>
-              </li>
-              <li>
-                <a class="" href="#">Collaborations</a>
-              </li>
-              <li>
-                <a class="" href="#">Statistics</a>
-              </li>
-              <li>
-                <a class="" href="#">How It Works</a>
-              </li>
-              <li>
-                <a class="" href="#">Testimonials</a>
-              </li>
-            </ul>
+              <ul class="flex flex-col gap-6">
+                <li>
+                  <a class="text-lg font-bold" href="#home">Home</a>
+                </li>
+                <li>
+                  <a class="" href="#">Collaborations</a>
+                </li>
+                <li>
+                  <a class="" href="#">Statistics</a>
+                </li>
+                <li>
+                  <a class="" href="#">How It Works</a>
+                </li>
+                <li>
+                  <a class="" href="#">Testimonials</a>
+                </li>
+              </ul>
             </div>
             <div>
-              <ul
-              class="flex flex-col gap-6"
-            >
-              <li>
-                <a class="text-lg font-bold" href="#home">About Us</a>
-              </li>
-              <li>
-                <a class="" href="#">Who We Are</a>
-              </li>
-              <li>
-                <a class="" href="#">Mission statement</a>
-              </li>
-              <li>
-                <a class="" href="#">Our Vision</a>
-              </li>
-              <li>
-                <a class="" href="#">The  Team </a>
-              </li>
-            </ul>
+              <ul class="flex flex-col gap-6">
+                <li>
+                  <a class="text-lg font-bold" href="#home">About Us</a>
+                </li>
+                <li>
+                  <a class="" href="#">Who We Are</a>
+                </li>
+                <li>
+                  <a class="" href="#">Mission statement</a>
+                </li>
+                <li>
+                  <a class="" href="#">Our Vision</a>
+                </li>
+                <li>
+                  <a class="" href="#">The Team </a>
+                </li>
+              </ul>
             </div>
             <div>
-              <ul
-              class="flex flex-col gap-6"
-            >
-              <li>
-                <a class="text-lg font-bold" href="#home">Upskill</a>
-              </li>
-              <li>
-                <a class="" href="#">It Support</a>
-              </li>
-              <li>
-                <a class="" href="#">Project Management</a>
-              </li>
-              <li>
-                <a class="" href="#">Data Analysts</a>
-              </li>
-              <li>
-                <a class="" href="#">Ux Design</a>
-              </li>
-            </ul>
+              <ul class="flex flex-col gap-6">
+                <li>
+                  <a class="text-lg font-bold" href="#home">Upskill</a>
+                </li>
+                <li>
+                  <a class="" href="#">It Support</a>
+                </li>
+                <li>
+                  <a class="" href="#">Project Management</a>
+                </li>
+                <li>
+                  <a class="" href="#">Data Analysts</a>
+                </li>
+                <li>
+                  <a class="" href="#">Ux Design</a>
+                </li>
+              </ul>
             </div>
             <div>
-              <ul
-              class="flex flex-col gap-6"
-            >
-              <li>
-                <a class="text-lg font-bold" href="#home">Contact Us</a>
-              </li>
-              <li>
-                <a class="" href="#">Your message</a>
-              </li>
-              <li>
-                <a class="" href="#">Email</a>
-              </li>
-              <li>
-                <a class="" href="#">Phone number</a>
-              </li>
-              <li>
-                <a class="" href="#">Linkedin </a>
-              </li>
-            </ul>
+              <ul class="flex flex-col gap-6">
+                <li>
+                  <a class="text-lg font-bold" href="#home">Contact Us</a>
+                </li>
+                <li>
+                  <a class="" href="#">Your message</a>
+                </li>
+                <li>
+                  <a class="" href="#">Email</a>
+                </li>
+                <li>
+                  <a class="" href="#">Phone number</a>
+                </li>
+                <li>
+                  <a class="" href="#">Linkedin </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
       </section>
       <hr class="h-px my-8 bg-[#20484F1A] border-0 dark:bg-white" />
       <!-- authority -->
-       <div class="text-center pb-8">
-        <p class="text-[#20484F] text-sm leading-5 dark:text-white">Copyright 2024 Creatives For You LTD</p>
-       </div>
+      <div class="text-center pb-8">
+        <p class="text-[#20484F] text-sm leading-5 dark:text-white">
+          Copyright © 2024 Creatives For You LTD
+        </p>
+      </div>
     </footer>
     <!-- === This Is Footer Section End === -->
 
     <!-- === JavaScript Start === -->
     <script>
       const htmlTag = document.getElementById("htmlTag");
-      document.getElementById("switch").addEventListener("click", function () {
+      document.getElementById("switch1").addEventListener("click", function () {
         htmlTag.classList.toggle("dark");
+        toggleButtons();
       });
+
+      document.getElementById("switch2").addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+        toggleButtons();
+      });
+
+      function toggleButtons() {
+        document.getElementById("switch1").classList.toggle("hidden");
+        document.getElementById("switch2").classList.toggle("hidden");
+      }
+
+      // Initial button state
+      document.getElementById("switch1").classList.remove("hidden");
+      document.getElementById("switch2").classList.add("hidden");
     </script>
     <!-- === JavaScript End === -->
   </body>
